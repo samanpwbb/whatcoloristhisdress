@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+  <meta charset=utf-8 />
+  <title>What color is this dress?</title>
+  <style>
+  body { text-align: center;}
+  h2 {
+    color: #333;
+    font-family: 'helvetica neue', helvetica, sans-serif;
+  }
+  img {
+    max-width: 100%;
+    max-height: 80vmin;
+    height: auto;
+  }
+  img.f1 {
+    -webkit-filter: hue-rotate(90deg);
+    -moz-filter: hue-rotate(90deg);
+    -ms-filter: hue-rotate(90deg);
+    -o-filter: hue-rotate(90deg);
+  }
+  img.f2 {
+    -webkit-filter: hue-rotate(45deg);
+    -moz-filter: hue-rotate(45deg);
+    -ms-filter: hue-rotate(45deg);
+    -o-filter: hue-rotate(45deg);
+  }
+  img.f3 {
+    -webkit-filter: hue-rotate(180deg);
+    -moz-filter: hue-rotate(180deg);
+    -ms-filter: hue-rotate(180deg);
+    -o-filter: hue-rotate(180deg);
+  }
+  img.f4 {
+    -webkit-filter: hue-rotate(270deg);
+    -moz-filter: hue-rotate(270deg);
+    -ms-filter: hue-rotate(270deg);
+    -o-filter: hue-rotate(270deg);
+  }
+  img.f5 {
+    -webkit-filter: hue-rotate(90deg);
+    -moz-filter: hue-rotate(90deg);
+    -ms-filter: hue-rotate(90deg);
+    -o-filter: hue-rotate(90deg);
+  }
+  img.f6 {
+    -webkit-filter: hue-rotate(220deg);
+    -moz-filter: hue-rotate(220deg);
+    -ms-filter: hue-rotate(220deg);
+    -o-filter: hue-rotate(220deg);
+  }
+  img.f7 {
+    -webkit-filter: hue-rotate(150deg);
+    -moz-filter: hue-rotate(150deg);
+    -ms-filter: hue-rotate(150deg);
+    -o-filter: hue-rotate(150deg);
+  }
+  img.f8 {
+    -webkit-filter: hue-rotate(300deg);
+    -moz-filter: hue-rotate(300deg);
+    -ms-filter: hue-rotate(300deg);
+    -o-filter: hue-rotate(300deg);
+  }
+  img.f9 {
+    -webkit-filter: hue-rotate(100deg);
+    -moz-filter: hue-rotate(100deg);
+    -ms-filter: hue-rotate(100deg);
+    -o-filter: hue-rotate(100deg);
+  }
+  img.f9 {
+    -webkit-filter: hue-rotate(200deg);
+    -moz-filter: hue-rotate(200deg);
+    -ms-filter: hue-rotate(200deg);
+    -o-filter: hue-rotate(200deg);
+  }
+  </style>
+</head>
+<body>
+<h2>What color is this dress</h2>
+<img id='dress' src='dress.jpg'></img>
+</body>
+
+<script>
+
+var color = Math.floor(Math.random() * 10);
+console.log(color);
+
+document.getElementById('dress').classList.add('f' + color);
+
+</script>
+</html>

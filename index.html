@@ -84,10 +84,18 @@
 
 <script>
 
-var color = Math.floor(Math.random() * 10);
-console.log(color);
+var dress = document.getElementById('dress');
 
-document.getElementById('dress').classList.add('f' + color);
+function setColor() {
+  var color = Math.floor(Math.random() * 10);
+  
+  dress.className = ''
+  dress.classList.add('f' + color);
+  
+  requestAnimationFrame(setColor);
+}
+
+setColor();
 
 </script>
 </html>
